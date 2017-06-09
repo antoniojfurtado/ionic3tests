@@ -1,0 +1,10 @@
+https://www.djamware.com/post/58e657b680aca764ec903c2d/ionic-3-and-angular-4-mobile-app-example
+Lazy Loading
+
+Deep linking
+http://masteringionic.com/blog/2017-04-14-lazy-loading-and-deep-linking-with-ionic-3/
+
+
+https://github.com/mhartington/lazyLoadTabs
+
+https://github.com/mhartington/lazyLoadingBlank

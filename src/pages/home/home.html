@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+      <ion-row wrap>
+        <ion-col col-3 *ngFor="let item of items | async">
+          <ion-card>
+            <img src="http://www.jennybeaumont.com/wp-content/uploads/2015/03/placeholder.gif"/>
+            <ion-card-content>
+              <ion-card-title [navPush]="details">
+                {{item.$value}}
+
+              </ion-card-title>
+              <p>
+                The most popular industrial group ever, and largely
+                responsible for bringing the music to a mass audience.
+              </p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
