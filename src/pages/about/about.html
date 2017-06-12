@@ -1,49 +1,10 @@
 <ion-content padding>
 
-  <ion-split-pane>
-    <ion-menu [content]="content">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
 
-      <ion-thumbnail item-start>
-        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-totoro.png">
-      </ion-thumbnail>
-
-      <ion-list>
-        <button ion-item (click)="openPage(homePage)">
-          Home
-        </button>
-        <button ion-item (click)="openPage(friendsPage)">
-          About
-        </button>
-        <button ion-item (click)="openPage(friendsPage)">
-          Contact
-        </button>
-        <button ion-item (click)="openPage(friendsPage)">
-          News
-        </button>
-        <button ion-item (click)="openPage(eventsPage)">
-          Up Events
-        </button>
-        <button ion-item (click)="openPage(eventsPage)">
-          Blog
-        </button>
-        <button ion-item (click)="openPage(eventsPage)">
-          Promos and Offers
-        </button>
-        <ion-item>
-          <ion-icon name="logo-twitter" item-start></ion-icon>
-          Followers
-          <ion-badge item-end>260k</ion-badge>
-        </ion-item>
-
-      </ion-list>
-    </ion-menu>
-
-
-    <ion-grid>
-      <ion-row>
-        <ion-col col-12>
-
-          <ion-slides pager>
+        <ion-slides pager>
 
           <ion-slide style="background-color: green; height : 200px">
             <h2>Slide 1</h2>
@@ -56,82 +17,71 @@
           <ion-slide style="background-color: red; height : 200px">
             <h2>Slide 3</h2>
           </ion-slide>
-          </ion-slides>
+        </ion-slides>
 
 
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col offset-2 col-6>
-          <div padding>
-            <ion-segment [(ngModel)]="pet">
-              <ion-segment-button value="kittens">
-                Kittens
-              </ion-segment-button>
-              <ion-segment-button value="puppies">
-                Puppies
-              </ion-segment-button>
-            </ion-segment>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col offset-2 col-6>
+        <div padding>
+          <ion-segment [(ngModel)]="pet">
+            <ion-segment-button value="kittens">
+              Kittens
+            </ion-segment-button>
+            <ion-segment-button value="puppies">
+              Puppies
+            </ion-segment-button>
+          </ion-segment>
 
-            <div [ngSwitch]="pet">
-              <ion-list *ngSwitchCase="'puppies'">
-                <ion-card>
-                  <img src="img/nin-live.png"/>
-                  <ion-card-content>
-                    <ion-card-title>
-                      Nine Inch Nails Live
-                    </ion-card-title>
-                    <p>
-                      The most popular industrial group ever, and largely
-                      responsible for bringing the music to a mass audience.
-                    </p>
-                  </ion-card-content>
-                </ion-card>
+          <div [ngSwitch]="pet">
+            <ion-list *ngSwitchCase="'puppies'">
+              <ion-card>
+                <img src="img/nin-live.png"/>
+                <ion-card-content>
+                  <ion-card-title>
+                    Nine Inch Nails Live
+                  </ion-card-title>
+                  <p>
+                    The most popular industrial group ever, and largely
+                    responsible for bringing the music to a mass audience.
+                  </p>
+                </ion-card-content>
+              </ion-card>
 
-                <ion-card>
-                  <img src="img/nin-live.png"/>
-                  <ion-card-content>
-                    <ion-card-title>
-                      Nine Inch Nails Live
-                    </ion-card-title>
-                    <p>
-                      The most popular industrial group ever, and largely
-                      responsible for bringing the music to a mass audience.
-                    </p>
-                  </ion-card-content>
-                </ion-card>
-              </ion-list>
+              <ion-card>
+                <img src="img/nin-live.png"/>
+                <ion-card-content>
+                  <ion-card-title>
+                    Nine Inch Nails Live
+                  </ion-card-title>
+                  <p>
+                    The most popular industrial group ever, and largely
+                    responsible for bringing the music to a mass audience.
+                  </p>
+                </ion-card-content>
+              </ion-card>
+            </ion-list>
 
-              <ion-list *ngSwitchCase="'kittens'">
-                <ion-card>
-                  <img src="img/nin-live.png"/>
-                  <ion-card-content>
-                    <ion-card-title>
-                      Nine Inch Nails Live
-                    </ion-card-title>
-                    <p>
-                      The most popular industrial group ever, and largely
-                      responsible for bringing the music to a mass audience.
-                    </p>
-                  </ion-card-content>
-                </ion-card>
-              </ion-list>
-            </div>
-
+            <ion-list *ngSwitchCase="'kittens'">
+              <ion-card>
+                <img src="img/nin-live.png"/>
+                <ion-card-content>
+                  <ion-card-title>
+                    Nine Inch Nails Live
+                  </ion-card-title>
+                  <p>
+                    The most popular industrial group ever, and largely
+                    responsible for bringing the music to a mass audience.
+                  </p>
+                </ion-card-content>
+              </ion-card>
+            </ion-list>
           </div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
 
-
-
-
-    <ion-nav [root]="HomePage" #content swipeBackEnabled="false" main>sdfsdf</ion-nav>
-  </ion-split-pane>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
-<style>
-  ion-menu {
-    max-width: 200px!important;
-  }
-</style>
