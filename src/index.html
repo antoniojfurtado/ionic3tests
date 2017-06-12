@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <base href="/" />
   <meta charset="UTF-8">
   <title>Ionic App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -12,7 +13,6 @@
   <meta name="theme-color" content="#4e8ef7">
  
   <!-- cordova.js required for cordova apps -->
-  <script src="cordova.js"></script>
 
   <!-- un-comment this code to enable service worker
   <script>
@@ -23,10 +23,10 @@
     }
   </script>-->
 
-  <link href="build/main.css" rel="stylesheet">
-
 </head>
 <body>
+  <script src="cordova.js"></script>
+  <link href="build/main.css" rel="stylesheet">
 
   <!-- Ionic's root component and where the app will load -->
   <ion-app></ion-app>

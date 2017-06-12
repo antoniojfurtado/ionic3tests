@@ -1,5 +1,16 @@
 {
   "name": "evz",
   "app_id": "",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "gulpStartupTasks": [
+    "sass",
+    "templatecache",
+    "ng_annotate",
+    "useref",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
 }

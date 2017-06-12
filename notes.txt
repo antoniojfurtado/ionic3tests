@@ -8,3 +8,5 @@ http://masteringionic.com/blog/2017-04-14-lazy-loading-and-deep-linking-with-ion
 https://github.com/mhartington/lazyLoadTabs
 
 https://github.com/mhartington/lazyLoadingBlank
+
+http://ionicframework.com/docs/api/config/Config/
